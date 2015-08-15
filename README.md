@@ -1,3 +1,6 @@
+I'm using the fork to try this out with ObjectMapper. If it turns out to be useful I will try to create an extension (if possible) or just maintain this fork. 
+
+
 # ApiModel
 
 Interact with REST apis using realm.io to represent objects. The goal of `ApiModel` is to be easy to setup, easy to grasp, and fun to use. Boilerplate should be kept to a minimum, and also intuitive to set up.
