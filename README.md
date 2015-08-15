@@ -1,3 +1,6 @@
+# Visit [github/erkie/ApiModel](https://github.com/erkie/ApiModel) for the official project.
+This is just my fork where I'm trying to learn more about ApiModel and modify for for my needs. (see [feature/objectmapper](https://github.com/dustintownsend/ApiModel/tree/feature/objectmapper) for my current work. I'm attempting integrate [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper/) to replace the current transforms.
+
 # ApiModel
 
 Interact with REST apis using realm.io to represent objects. The goal of `ApiModel` is to be easy to setup, easy to grasp, and fun to use. Boilerplate should be kept to a minimum, and also intuitive to set up.
