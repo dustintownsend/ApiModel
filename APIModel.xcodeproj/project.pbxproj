@@ -37,6 +37,8 @@
 		6D47F25F1AF786C8007DEF9A /* DoubleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D47F25E1AF786C8007DEF9A /* DoubleTransform.swift */; };
 		6DE1A3261AFB6035002CB25E /* Object+ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE1A3251AFB6035002CB25E /* Object+ApiModel.swift */; };
 		BE7938AC4C471E976B2F7384 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB40266BE10F16D08FF30F4 /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		DA4A139F1B7F9EDC0017E748 /* ApiMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A139E1B7F9EDC0017E748 /* ApiMappable.swift */; };
+		DA4A13A11B7FA7840017E748 /* ApiForm+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A13A01B7FA7840017E748 /* ApiForm+ObjectMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		401654F7FCB7720D7CB61B36 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6D47F25E1AF786C8007DEF9A /* DoubleTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTransform.swift; sourceTree = "<group>"; };
 		6DE1A3251AFB6035002CB25E /* Object+ApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Object+ApiModel.swift"; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		DA4A139E1B7F9EDC0017E748 /* ApiMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMappable.swift; sourceTree = "<group>"; };
+		DA4A13A01B7FA7840017E748 /* ApiForm+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ApiForm+ObjectMapper.swift"; sourceTree = "<group>"; };
 		DAB40266BE10F16D08FF30F4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -220,6 +224,7 @@
 				0370B7A81AAF82630085F048 /* Utils.swift */,
 				033DEF201B1CDE2400266453 /* Parsers */,
 				033E23F71AF62C3800F1C171 /* Transforms */,
+				DA4A139D1B7F9D370017E748 /* ObjectMapper+ApiModel */,
 				033E23F41AF62AD600F1C171 /* Realm+ApiModel */,
 				037D7F341AAF6E2500AC3D32 /* Supporting Files */,
 				0326C5101AFB7B79005FC057 /* Vendor */,
@@ -242,6 +247,15 @@
 				2D5BA2758CD4A8B5313DB805 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA4A139D1B7F9D370017E748 /* ObjectMapper+ApiModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A139E1B7F9EDC0017E748 /* ApiMappable.swift */,
+				DA4A13A01B7FA7840017E748 /* ApiForm+ObjectMapper.swift */,
+			);
+			name = "ObjectMapper+ApiModel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +423,7 @@
 				0370B7BE1AAF82630085F048 /* Transform.swift in Sources */,
 				0326C5161AFB7B79005FC057 /* Pluralize.swift in Sources */,
 				0370B7A91AAF82630085F048 /* Api.swift in Sources */,
+				DA4A13A11B7FA7840017E748 /* ApiForm+ObjectMapper.swift in Sources */,
 				0370B7B51AAF82630085F048 /* NSDateTransform.swift in Sources */,
 				0370B7AB1AAF82630085F048 /* ApiConfiguration.swift in Sources */,
 				038CAB191B17C21D00440808 /* ApiRoutes.swift in Sources */,
@@ -417,6 +432,7 @@
 				6DE1A3261AFB6035002CB25E /* Object+ApiModel.swift in Sources */,
 				0370B7B01AAF82630085F048 /* BoolTransform.swift in Sources */,
 				0370B7AD1AAF82630085F048 /* ApiForm.swift in Sources */,
+				DA4A139F1B7F9EDC0017E748 /* ApiMappable.swift in Sources */,
 				033E23EC1AF6284E00F1C171 /* ApiRequest.swift in Sources */,
 				0370B7B61AAF82630085F048 /* PercentageTransform.swift in Sources */,
 			);
@@ -675,6 +691,7 @@
 				033E79221B7C9F78008E2A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0366A4961AAF66ED00506F50 /* Build configuration list for PBXNativeTarget "ApiModel" */ = {
 			isa = XCConfigurationList;
